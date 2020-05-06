@@ -8,6 +8,7 @@
 	background-color: #e6f2ff;
 	border-radius: 50%;
 	border: 20px solid #e6f2ff;
+	position: relative;
 }
 #circle-results {
 	text-align: center;
@@ -38,7 +39,6 @@
 	background-color: black;
 	position: absolute;
 	margin-left: -20px;
-	margin-top: -190px;
 }
 
 #final-results {
