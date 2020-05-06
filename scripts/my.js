@@ -12,7 +12,7 @@ calculate = () => {
 	//add/subtract the elevation
 	final_distance += addSubtractElevation(elevation, pin_distance);
 	//add/subtract the wind influence
-	final_distance += parseFloat((90-fakeAngle)/90 * wind * meterToYards) * (windDirectionY=="Forward"?-1:1);
+	final_distance += parseFloat((90-fakeAngle)/90 * wind) * (windDirectionY=="Forward"?-1:1);
 	//calculate the powerbards
 	var final_pb = Math.abs(Math.sin(fakeAngle * Math.PI / 180) * wind * getHWI(maxPower, final_distance));
 	//adjust final_pb with elevation
