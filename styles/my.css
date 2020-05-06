@@ -1,7 +1,6 @@
 #circle-wind-container {
 	width: 100%;
 }
-
 #circle-wind {
 	margin: auto;
 	width: 250px;
@@ -10,11 +9,9 @@
 	border-radius: 50%;
 	border: 20px solid #e6f2ff;
 }
-
 #circle-results {
 	text-align: center;
 }
-
 #circle-wind-direction {
 	width: 100%;
 	height: 100%;
@@ -24,6 +21,24 @@
 	background-size: contain;
 	border-radius: 50%;
 	overflow: hidden;
+	position: relative;
+}
+.circle-markers-vertical {
+	width: 2px;
+	height: 250px;
+	margin-top: -230px;
+	left: 50%;
+	background-color: black;
+	position: absolute;
+}
+.circle-markers-horizontal {
+	width: 250px;
+	height: 2px;
+	top: 50%;
+	background-color: black;
+	position: absolute;
+	margin-left: -20px;
+	margin-top: -190px;
 }
 
 #final-results {
