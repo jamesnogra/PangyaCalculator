@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PangYa Calculator (Tomahawk)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="styles/my.css">
+	<script src="scripts/my.js"></script>
+</head>
+<body>
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">Maximum 1W</span>
+  </div>
+  <select id="max-power" onChange="calculate();" class="form-control">
+  	<option value="250">250</option>
+  	<option value="260">260</option>
+  	<option value="270">270</option>
+  </select>
+  <div class="input-group-append">
+    <span class="input-group-text">yards</span>
+  </div>
+</div>
+
+<div id="circle-wind-container">
+	<div id="circle-wind"><div id="circle-wind-direction"></div></div>
+</div>
+<div id="circle-results">0.0 &#176;, Right, Forward</div>
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">Wind</span>
+  </div>
+  <!--<input value="5" id="wind" onChange="calculate();" type="text" class="form-control" placeholder="Wind (M)" aria-describedby="basic-addon1" inputmode="numeric">-->
+  <select id="wind" onChange="calculate();" class="form-control">
+  	<option value="1">1</option>
+  	<option value="2">2</option>
+  	<option value="3">3</option>
+  	<option value="4">4</option>
+  	<option value="5">5</option>
+  	<option value="6">6</option>
+  	<option value="7">7</option>
+  	<option value="8">8</option>
+  	<option value="9">9</option>
+  </select>
+  <div class="input-group-append">
+    <span class="input-group-text">M</span>
+  </div>
+</div>
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">Pin Distance</span>
+  </div>
+  <input value="221" id="pin-distance" onChange="calculate();" type="text" class="form-control" placeholder="Pin Distance (yards)" aria-describedby="basic-addon1" inputmode="numeric">
+  <div class="input-group-append">
+    <span class="input-group-text">yards</span>
+  </div>
+</div>
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">Elevation</span>
+  </div>
+  <input value="2.52" id="elevation" onChange="calculate();" type="text" class="form-control" placeholder="Elevation (M)" aria-describedby="basic-addon1" inputmode="numeric">
+  <div class="input-group-append">
+    <span class="input-group-text">M</span>
+  </div>
+</div>
+
+<div>
+	<h3 id="final-results"></h3>
+</div>
+<div id="power-bar">
+	<div class="power-bar-divisions"></div>
+	<div class="power-bar-divisions"></div>
+	<div class="power-bar-divisions"></div>
+	<div class="power-bar-divisions"></div>
+	<div class="power-bar-divisions power-bar-divisions-thick"></div>
+	<div class="power-bar-divisions"></div>
+	<div class="power-bar-divisions"></div>
+	<div class="power-bar-divisions"></div>
+	<div class="power-bar-divisions"></div>
+	<div id="power-bar-fill"></div>
+</div>
+
+</body>
+</html>

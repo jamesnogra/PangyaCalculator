@@ -1,0 +1,55 @@
+#circle-wind-container {
+	width: 100%;
+}
+
+#circle-wind {
+	margin: auto;
+	width: 250px;
+	height: 250px;
+	background-color: #e6f2ff;
+	border-radius: 50%;
+	border: 20px solid #e6f2ff;
+}
+
+#circle-results {
+	text-align: center;
+}
+
+#circle-wind-direction {
+	width: 100%;
+	height: 100%;
+	background-color: red;
+	margin: auto;
+	background-image: url("arrow.png");
+	background-size: contain;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+#final-results {
+	text-align: center;
+}
+
+#power-bar {
+	width: 100%;
+	height: 25px;
+	background-color: #cc3300;
+	position: fixed;
+	bottom: 5px;
+}
+.power-bar-divisions {
+	width: 10%;
+	height: 100%;
+	border-right: 2px solid black;
+	float: left;
+}
+.power-bar-divisions-thick {
+	border-right: 5px solid black;
+}
+#power-bar-fill {
+	background-color: #0080ff;
+	height: 100%;
+	width: 100%;
+	opacity: 0.70;
+	position: absolute;
+}
