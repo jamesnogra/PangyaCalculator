@@ -38,6 +38,7 @@ addSubtractElevation = (elevation, pin_distance) => {
 	var elevationMultiplier = 4.33 - (0.013 * pin_distance); //equation derived from the table
 	var numberToAddSubstract = parseFloat(elevation) * elevationMultiplier;
 	//console.log("Elevation Mul: " + elevationMultiplier, "\nFinal: " + numberToAddSubstract);
+	numberToAddSubstract *= (elevation<0) ? 1.25 : 1.65;
 	return numberToAddSubstract;
 }
 
